@@ -1,0 +1,53 @@
+/* Mobile and table */
+@media screen and (max-width: 1023px) {
+  :root {
+    --header-navbar: 0px;
+  }
+  .hide-on-mobile-tablet {
+    display: none;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+  }
+  .header__menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .app__container {
+    margin-top: calc(var(--header) + var(--header-sort-bar));
+  }
+  .header__back-icon {
+    display: block;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0 20px;
+  }
+  .header__sort-bar {
+    display: flex;
+  }
+  .header__search {
+    margin-right: 20px;
+  }
+  .header-with-search {
+    padding-bottom: 0;
+  }
+}
+/* tablet */
+@media screen and (max-width: 740px) and (min-width: 1023px) {
+  .hide-on-tablet {
+    display: none;
+  }
+}
+/* mobile */
+@media screen and (max-width: 739px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}

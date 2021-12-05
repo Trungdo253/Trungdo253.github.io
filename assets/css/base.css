@@ -158,6 +158,7 @@ template {
   --header: 120px;
   --header-navbar: 34px;
   --header-search: calc(var(--header) - var(--header-navbar));
+  --header-sort-bar: 40px;
 }
 * {
   box-sizing: inherit;
@@ -175,16 +176,6 @@ html {
   color: var(--white-color);
 }
 /* responsive */
-.grid {
-  width: 1200px;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.grid__full-width {
-  width: 100%;
-}
-
 .grid__row {
   display: flex;
   flex-wrap: wrap;

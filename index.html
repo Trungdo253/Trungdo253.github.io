@@ -20,14 +20,16 @@
       href="./assets/font/fontawesome-free-6.0.0-beta2-web/css/all.min.css"
     />
     <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
 
   <body>
     <div class="app">
       <header class="header">
-        <div class="grid">
-          <nav class="header__navbar">
+        <div class="grid wide">
+          <nav class="header__navbar hide-on-mobile-tablet">
             <ul class="header__navbar-list">
               <li class="header__navbar-items">Kênh người bán</li>
               <li class="header__navbar-items header__navbar-items--showqr">
@@ -235,7 +237,7 @@
             </ul>
           </nav>
           <div class="header-with-search">
-            <a href="#" class="header__logo">
+            <a href="#" class="header__logo hide-on-mobile-tablet">
               <svg viewBox="0 0 192 65" class="header__logo-img">
                 <g fill-rule="evenodd">
                   <path
@@ -244,6 +246,9 @@
                   ></path>
                 </g>
               </svg>
+            </a>
+            <a href="#" class="header__back">
+              <i class="header__back-icon fas fa-arrow-left"></i>
             </a>
             <div class="header__search">
               <div class="header__search-box">
@@ -277,16 +282,26 @@
                 <a href="" class="header__search-suggest-link"
                   >Chuột không dây</a
                 >
-                <a href="" class="header__search-suggest-link">Bàn học</a>
-                <a href="" class="header__search-suggest-link">Nồi cơm điện</a>
-                <a href="" class="header__search-suggest-link"
+                <a
+                  href=""
+                  class="header__search-suggest-link hide-on-mobile-tablet"
+                  >Bàn học</a
+                >
+                <a
+                  href=""
+                  class="header__search-suggest-link hide-on-mobile-tablet"
+                  >Nồi cơm điện</a
+                >
+                <a
+                  href=""
+                  class="header__search-suggest-link hide-on-mobile-tablet"
                   >Nồi chiên không dầu</a
                 >
                 <a href="" class="header__search-suggest-link">Gối ôm</a>
               </div>
             </div>
 
-            <div class="header__cart">
+            <div class="header__cart hide-on-mobile-tablet">
               <div class="header__cart-icon">
                 <i class="ti-shopping-cart"></i>
               </div>
@@ -521,10 +536,28 @@
             </div>
           </div>
         </div>
+        <ul class="header__sort-bar">
+          <li class="header__sort-item active">
+            <a href="" class="header__sort-link"> Liên Quan </a>
+          </li>
+          <li class="header__sort-item">
+            <a href="" class="header__sort-link"> Mới Nhất </a>
+          </li>
+          <li class="header__sort-item">
+            <a href="" class="header__sort-link"> Bán Chạy </a>
+          </li>
+          <li class="header__sort-item">
+            <a href="" class="header__sort-link"> Giá </a>
+          </li>
+        </ul>
+
+        <div class="header__menu">
+          <i class="header__menu-icon fas fa-bars"></i>
+        </div>
       </header>
 
       <div class="app__container">
-        <div class="grid">
+        <div class="grid wide">
           <div class="grid__row app__content">
             <div class="grid__col-2">
               <nav class="category">
@@ -544,7 +577,7 @@
             </div>
 
             <div class="grid__col-10">
-              <div class="home-filter">
+              <div class="home-filter hide-on-mobile-tablet">
                 <span class="home-filter__label"> Sắp xếp theo </span>
                 <button class="btn home-filter__btn">Phổ biến</button>
                 <button class="btn home-filter__btn btn--primary">
@@ -584,7 +617,7 @@
               </div>
 
               <div class="home-product">
-                <div class="grid">
+                <div class="grid wide">
                   <div class="grid__row">
                     <div class="grid__col-2-4">
                       <a href="#" class="home-product-item-link">
@@ -2193,7 +2226,7 @@
       </div>
 
       <footer class="footer">
-        <div class="grid">
+        <div class="grid wide">
           <div class="grid__row">
             <div class="grid__col-2-4">
               <h3 class="footer__heading">Chăm sóc khách hàng</h3>
@@ -2311,7 +2344,9 @@
             <div class="grid__col-2-4">
               <h3 class="footer__heading">tải ứng dụng shopee ngay</h3>
               <a href="#" class="footer-item__link">
-                <ul class="footer-list footer-list--dowload">
+                <ul
+                  class="footer-list footer-list--dowload hide-on-mobile-tablet"
+                >
                   <img
                     src="./assets/img/qr.png"
                     alt=""
@@ -2335,7 +2370,7 @@
           </div>
         </div>
         <div class="footer__bottom">
-          <div class="grid">
+          <div class="grid wide">
             <p class="footer-copyright">
               © 2015 - Bản quyền thuộc về Công ty TNHH Trung Đô
             </p>
