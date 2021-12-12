@@ -15,28 +15,20 @@
   }
   .header__menu {
     display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
+    /* margin-left: 5px; */
   }
 
   .app__container {
     margin-top: calc(var(--header) + var(--header-sort-bar));
   }
-  .header__back-icon {
-    display: block;
-    color: #fff;
-    font-size: 2rem;
-    padding: 0 20px;
-  }
   .header__sort-bar {
     display: flex;
   }
-  .header__search {
-    margin-right: 20px;
-  }
   .header-with-search {
     padding-bottom: 0;
+  }
+  .header__back {
+    display: block;
   }
 }
 /* tablet */
@@ -47,7 +39,25 @@
 }
 /* mobile */
 @media screen and (max-width: 739px) {
+  :root {
+    --header: 90px;
+  }
   .hide-on-mobile {
     display: none;
+  }
+  .app__content {
+    padding: 0 6px;
+  }
+  .pagination-item {
+    margin: 6px;
+  }
+  .pagination-item-link {
+    font-size: 1.5rem;
+  }
+  .header-with-search {
+    margin-top: 17px;
+  }
+  .header__search {
+    margin-left: 10px;
   }
 }

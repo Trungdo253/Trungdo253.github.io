@@ -342,9 +342,9 @@
 /* header with search */
 .header-with-search {
   height: var(--header-search);
-  padding: 10px 0;
+  /* padding: 10px 0; */
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .header__logo {
@@ -359,16 +359,24 @@
   width: 162px;
 }
 .header__back {
+  display: none;
   text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
 }
 .header__back-icon {
-  display: none;
+  color: #fff;
+  font-size: 2rem;
 }
 .header__search {
   height: 40px;
   background-color: #fff;
   flex-grow: 1;
   border-radius: 3px;
+  /* margin: 0 10px;
+  margin: 0; */
 }
 
 .header__search-box {
@@ -653,8 +661,13 @@ cart
   opacity: 0.8;
 }
 /*  */
-.header__menu{
+.header__menu {
   display: none;
+  padding: 10px;
+}
+.header__menu-icon {
+  font-size: 3rem;
+  color: var(--white-color);
 }
 
 /* when login success */
