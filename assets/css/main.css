@@ -962,6 +962,7 @@ cart
   font-size: 1rem;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .home-product-item__like > i {
   cursor: pointer;

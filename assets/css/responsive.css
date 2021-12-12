@@ -60,4 +60,11 @@
   .header__search {
     margin-left: 10px;
   }
+  .home-product-item__sale-off-mobile {
+    font-size: 1.1rem;
+  }
+  .home-product-item__sale-off {
+    height: 30px;
+    /* width: 20px; */
+  }
 }
