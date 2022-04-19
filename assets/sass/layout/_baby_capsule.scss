@@ -1,0 +1,85 @@
+.baby-capsule {
+    margin-top: 80px;
+
+    &-wrapper {
+        display        : flex;
+        flex-wrap      : wrap;
+        justify-content: center;
+    }
+
+    .baby-img-wrapper,
+    &-sale {
+        max-width : 585px;
+        max-height: 600px;
+    }
+
+    .baby-img-wrapper {
+        img {
+            width: 100%;
+        }
+    }
+
+    &-sale {
+        width           : 100%;
+        background-color: #000;
+        text-align      : center;
+
+        &-caption {
+            @include fontUp();
+
+            h5 {
+                font-size: 24px;
+                margin   : 79px 0 38px 0;
+            }
+
+            h1 {
+                font-size: 72px;
+            }
+
+            h1,
+            h5 {
+                font-weight: bold;
+            }
+        }
+
+        &-btn {
+            font-size : 12px;
+            margin    : 57px 0 78px 0;
+            transition: color 0.3s ease;
+            @include fontUp();
+            @include customBtn();
+
+            &:hover {
+                color           : $color-red-light;
+                background-color: $color-green-light;
+                border          : transparent;
+            }
+        }
+
+        &-date-time {
+            display        : flex;
+            justify-content: center;
+
+            .date-box {
+                width           : 60px;
+                height          : 60px;
+                margin-right    : 10px;
+                background-color: $color-red-btn;
+                display         : flex;
+                text-align      : center;
+                align-items     : center;
+
+                &-style {
+                    color      : #fff;
+                    font-weight: bold;
+                    font-size  : 14px;
+                    line-height: 1.2;
+
+                    &-value {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,134 @@
+.banner-contact {
+    background-color: #000;
+    height          : 300px;
+
+    &-title {
+        font-size  : 60px;
+        font-weight: bold;
+        color      : #fff;
+    }
+}
+
+.contact-main {
+    font-size  : 14px;
+    color      : $color-brownish-grey;
+    font-weight: 600;
+
+    &-wrapper {
+        display        : flex;
+        justify-content: center;
+    }
+
+    &-content {
+        width: 50vw;
+    }
+
+    &-message {
+        margin: 57px 0;
+    }
+
+    &-timeline {
+        position  : relative;
+        height    : auto;
+        box-sizing: border-box;
+
+        &::before {
+            content         : '';
+            position        : absolute;
+            width           : 2px;
+            height          : 100%;
+            left            : 8px;
+            background-color: #dddddd;
+        }
+
+        .timeline {
+            &-item {
+                position  : relative;
+                box-sizing: border-box;
+
+                &::before {
+                    content         : '';
+                    position        : absolute;
+                    width           : 17px;
+                    height          : 17px;
+                    left            : -100;
+                    border-radius   : 50%;
+                    border          : 1px solid #dddddd;
+                    background-color: #fff;
+                }
+
+                &-content {
+                    margin-left: 30px;
+
+                    h3 {
+                        font-weight  : bold;
+                        font-size    : 12px;
+                        color        : #222;
+                        margin-bottom: 20px;
+                        @include fontUp();
+                    }
+
+                    &-title {
+                        color        : #222;
+                        font-weight  : 600;
+                        margin-bottom: 10px;
+                    }
+
+                    &-info {
+                        margin: 20px 0 50px 0;
+
+                        p {
+                            line-height: 1.5;
+                        }
+                    }
+
+                    a {
+                        color                : #222222;
+                        text-decoration-color: #eaeaea;
+                        font-weight          : 500;
+                    }
+                }
+            }
+        }
+    }
+
+    &-contact {
+        font-size : 48px;
+        color     : #000000;
+        margin-top: 79px;
+    }
+
+    &-form-contact {
+
+        input[type="text"]:focus {
+            outline: none !important;
+            border : none !important;
+        }
+
+        label {
+            font-size: 13px;
+            color    : #000;
+            margin   : 20px 0;
+        }
+
+        .my-input {
+            @include customInput();
+
+            &:focus {
+                outline: 0 !important;
+            }
+        }
+
+        .contact-area {
+            border-radius: unset;
+            border-color : #eaeaea;
+        }
+
+        .my-btn {
+            margin: 30px 0 80px 0;
+            color : #000 !important;
+            width : 180px !important;
+            @include customBtn();
+        }
+    }
+}

@@ -1,0 +1,200 @@
+.shopping-cart {
+    margin: 40px 0 100px 0;
+
+    &-title {
+
+        span {
+            display: block;
+            margin : 10px 0;
+        }
+
+        &-1 {
+            font-size  : 60px;
+            font-weight: 600;
+            color      : #222;
+        }
+
+        &-2 {
+            font-size: 16px;
+            color    : $color-brownish-grey;
+        }
+    }
+
+    &-wrapper {
+        padding: 0 150px;
+    }
+
+    &-row {
+        margin-top: 100px;
+
+        .cart-detail {
+            &-title {
+                font-size  : 13px;
+                font-weight: bold;
+            }
+
+            &-row {
+                padding: 8px 0;
+
+                .cart-content {
+                    margin     : 20px 0;
+                    display    : flex;
+                    align-items: center;
+                    flex-wrap  : wrap;
+
+                    &-box {
+                        width           : 80px;
+                        height          : 120px;
+                        background-color: #f1f1f1;
+                    }
+
+                    &-text {
+                        font-size  : 14px;
+                        font-weight: bold;
+                        line-height: 25px;
+
+                        &-size {
+                            font-size: 13px;
+                            color    : $color-brownish-grey;
+                        }
+                    }
+
+                    div {
+                        margin-right: 10px;
+                    }
+                }
+
+                &-btn {
+                    border        : 1px dashed #222;
+                    text-transform: unset !important;
+
+                    &-left {
+                        float : left;
+                        margin: 0 5px;
+                    }
+
+                    &-right {
+                        float: right;
+                    }
+                }
+
+                &-update-cart {
+                    color           : #fff;
+                    background-color: #222;
+                    @include fontUp();
+                    @include customBtn();
+
+                    &:hover {
+                        background-color: #fff;
+                        color           : #222;
+                        border          : 2px solid #222;
+                    }
+                }
+
+                &-btn,
+                &-update-cart {
+                    font-size: 13px;
+                }
+            }
+
+            .sub-total {
+                font-size  : 14px;
+                font-weight: bold;
+                float      : right;
+            }
+        }
+
+        .cart-totals {
+            height          : 800px;
+            background-color: #f5f5f5;
+            padding         : 0 30px;
+
+            &-title {
+                font-size: 18px;
+                @include fontUp();
+            }
+
+            &-sub-title {
+                @include fontUp();
+                font-size: 14px;
+
+                &-2 {
+                    font-size: 18px;
+                    float    : right;
+                }
+            }
+
+            div {
+                margin: 15px 0;
+            }
+
+            &-shipping {
+                font-size: 14px;
+
+                &-title {
+                    @include fontUp();
+                }
+
+                input[type="radio"] {
+                    margin-right: 10px;
+                }
+            }
+
+            &-Estimate {
+                &-title {
+                    font-size  : 14px;
+                    font-weight: bold;
+                }
+
+                &-form {
+                    background-color: #fff;
+                    padding         : 10px 20px;
+                    margin          : 30px 0 !important;
+
+                    .form-none-style {
+                        border-radius: unset;
+                        border       : none;
+                        border-bottom: 1px solid #eee;
+                        color        : rgb(148, 144, 144);
+                        padding      : 10px 0;
+                        font-size    : 13px;
+                    }
+
+                    &-btn {
+                        border   : 2px solid #000;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            &-btn {
+                margin-top: 30px !important;
+
+                button {
+                    margin: 10px 0;
+                }
+
+                &-proceed {
+                    background-color: #f33 !important;
+
+                    &:hover {
+                        background-color: #222 !important;
+                        color           : #fff;
+                        border          : 1px solid #000;
+                    }
+                }
+
+                &-continue {
+                    border: 2px solid #000;
+                }
+            }
+        }
+    }
+
+    &-btn {
+        height       : 40px;
+        font-size    : 12px;
+        border-radius: unset;
+        @include fontUp();
+    }
+}

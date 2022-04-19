@@ -1,0 +1,258 @@
+.single-post {
+    &-title {
+        margin-top : 50px;
+        font-size  : 60px;
+        font-weight: bold;
+        line-height: 70px;
+    }
+
+    &-by-who {
+        margin-top: 30px;
+    }
+
+    &-top-slide-wrapper {
+        margin   : auto;
+        max-width: 768px;
+        width    : 100%;
+        position : relative;
+
+        .top-slide-next {
+            @include posAbsolute("top-right", 280px, 0);
+            font-size: 36px;
+            cursor   : pointer;
+
+            &:hover {
+                color: $color-green-light;
+            }
+
+            &:active {
+                color: $color-red-light;
+            }
+        }
+    }
+
+    &-top-slide-slick {
+        width   : 570px;
+        margin  : 0 auto;
+        position: relative;
+
+        &-item {
+
+            img {
+                display: block;
+                width  : 100%;
+            }
+        }
+    }
+
+    &-content {
+        margin   : 50px 0;
+        color    : #666;
+        font-size: 14px;
+
+        &-title {
+            font-weight: bold;
+            color      : #000 !important;
+
+            #title-1 {
+                font-size: 36px;
+            }
+
+            #title-2 {
+                font-size: 30px;
+            }
+
+            #title-3 {
+                font-size: 24px;
+            }
+
+            #title-4 {
+                font-size: 14px;
+            }
+        }
+
+        &-main {
+            ul {
+                margin: 20px 0;
+
+                li {
+                    color: black !important;
+
+                    span {
+                        color: #666;
+                    }
+                }
+            }
+
+            a {
+                color: #000 !important;
+            }
+        }
+
+        &-img-note {
+
+            .box-for-img {
+                width           : 270px;
+                height          : 360px;
+                background-color: #f1f1f1;
+            }
+
+            .note-wrapper {
+                padding: 50px 0;
+            }
+
+            .comma-on-top {
+                font-size  : 48px;
+                font-family: PlayfairDisplay;
+                font-weight: bold;
+                height     : 30px;
+            }
+
+            .img-note {
+                font-size: 24px;
+                color    : #000 !important;
+            }
+        }
+
+        &-nav-text {
+            font-size: 12px;
+            color    : #000;
+        }
+
+        &-btn-fb {
+            background-color: rgb(53, 43, 189);
+            color           : #fff;
+            font-size       : 13px;
+            font-weight     : bold;
+
+            &:hover {
+                color: red;
+            }
+        }
+
+        &-btn-tw {
+            background-color: #f1f1f1;
+
+            i {
+                color: #28afee;
+            }
+        }
+
+        &-btn-g-plus {
+            color: red;
+
+        }
+
+        &-btn-fb,
+        &-btn-tw,
+        &-btn-g-plus {
+            font-weight: bold;
+        }
+
+        &-btn-tw,
+        &-btn-g-plus {
+            border: 1px solid #b4b2b2;
+        }
+
+        div {
+            margin: 20px 0;
+        }
+    }
+}
+
+.single-post-bot-slide {
+    height     : auto;
+    color      : #000;
+    font-weight: bold;
+
+    &-wrapper {
+        position: relative;
+        height  : auto;
+    }
+
+    &-title {
+        font-size: 24px;
+        @include fontUp();
+    }
+
+    &-next {
+        font-size: 32px;
+        cursor   : pointer;
+        @include posAbsolute('top-right', 40%, 0);
+
+        &:hover {
+            color: $color-green-light;
+        }
+
+        &:active {
+            color: $color-red-light;
+        }
+    }
+
+    &-slick {
+        height: 450px;
+        margin: 25px 0;
+
+        &-item {
+            position: relative;
+
+            &-content {
+                background-color: #ffff;
+                width           : 86%;
+                @include posAbsolute('top-left', 80%, 0);
+            }
+        }
+
+        .slick-dots {
+            margin-bottom: 30px;
+            @include dot-pass-bg-color-active(#b2b0b0, black);
+        }
+    }
+}
+
+.single-post-form-reply {
+    margin-top: 50px;
+
+    &-wrapper {
+        margin: 0 200px;
+    }
+
+    &-title {
+        font-size: 48px;
+        color    : #000;
+
+        &-note {
+            font-size: 14px;
+        }
+    }
+
+    .form-reply {
+        color: #000;
+
+        label {
+            @include fontUp();
+            font-size: 12px;
+        }
+
+        input {
+            border       : none;
+            border-radius: unset;
+            border-bottom: 1px solid #ddd;
+            padding      : 10px 0;
+        }
+
+        div {
+            padding: 0;
+            margin : 5px 0;
+        }
+
+        button {
+            border-radius: unset;
+            border       : 2px solid;
+            font-size    : 12px;
+            padding      : 10px 0;
+            @include fontUp();
+
+        }
+    }
+}

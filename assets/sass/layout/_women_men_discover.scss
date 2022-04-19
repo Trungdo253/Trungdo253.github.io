@@ -1,0 +1,116 @@
+.women-men-discover {
+    margin-top: 80px;
+
+    .wrapper-women-men {
+        display        : flex;
+        justify-content: center;
+        flex-wrap      : wrap;
+
+        .box-men,
+        .box-women {
+            max-width : 500px;
+            max-height: 500px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .box-women {
+            margin: 0 31px 0 0;
+        }
+
+        .box-men {
+            margin: 80px 0 0 0;
+        }
+
+        .box-women-men {
+            position: relative;
+
+            &-content {
+                width           : 287px;
+                height          : 136px;
+                background-color: #fff;
+                padding-left    : 30px;
+                padding-top     : 29px;
+
+                h3 {
+                    font-size  : 24px;
+                    line-height: 1.25;
+                    display    : block;
+                    @include fontUp();
+                }
+
+                a {
+                    color                : #222;
+                    font-size            : 12px;
+                    margin-top           : 10px;
+                    text-decoration-color: #dddddd;
+                    transition           : color 0.5s ease;
+                    @include fontUp();
+
+                    &:hover {
+                        color: $color-green-light;
+                    }
+                }
+            }
+
+            .women-content {
+                @include posAbsolute("bottom-left", 0, -69px);
+            }
+
+            .men-content {
+                @include posAbsolute("bottom-right", 0, -69px);
+            }
+        }
+    }
+
+    /* .wrapper-women-men {
+        height  : auto;
+        width   : 90%;
+        position: relative;
+
+        .img {
+            &-women {
+                float : left;
+                margin: 0 5%;
+            }
+
+            &-men {
+                float     : left;
+                margin-top: 8%;
+            }
+        }
+
+        .box-women {
+            @include posAbsolute('bottom-left', 15%, 0);
+        }
+
+        .box-men {
+            @include posAbsolute('bottom-right', 0, 0);
+        }
+
+        .box-women,
+        .box-men {
+            height          : 136px;
+            width           : 287px;
+            background-color: white;
+            padding         : 20px 20px;
+            color           : #222;
+            text-transform  : uppercase;
+            font-weight     : 600;
+        }
+
+        .water-padded,
+        .leather-bomber {
+            width    : 240px;
+            font-size: 24px;
+        }
+
+        .discover-now {
+            font-size            : 12px;
+            color                : #222;
+            text-decoration-color: #ddd;
+        }
+    } */
+}

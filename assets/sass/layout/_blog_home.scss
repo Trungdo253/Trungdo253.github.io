@@ -1,0 +1,87 @@
+.blog {
+    margin-top       : 80px;
+    max-height       : 770px;
+    background-image : url('../img/blog/bg.webp');
+    background-size  : 100% 100%;
+    background-repeat: no-repeat;
+
+    &-title {
+        font-size: 30px;
+        color    : #000;
+        margin   : 0 0 60px 0;
+        padding  : 80px 0 0;
+        @include fontUp();
+    }
+
+    &-wrapper-content {
+        display        : flex;
+        justify-content: center;
+    }
+
+    &-slick {
+        max-width: 1170px;
+        width    : 100%;
+        display  : inline-block;
+
+        &-item {
+            max-width   : 570px;
+            overflow    : hidden;
+            margin-right: 30px;
+
+            &-img-icon {
+                max-width: 570px;
+                position : relative;
+
+                .img-blog {
+                    width: 100%;
+                }
+
+                .item-icon {
+                    width           : 49px;
+                    height          : 49px;
+                    border-radius   : 50%;
+                    background-color: #fff;
+                    display         : flex;
+                    justify-content : center;
+                    align-items     : center;
+                    @include posAbsolute("bottom-left", -25px, 45%);
+                }
+            }
+
+            &-body {
+                margin-top: 40px;
+                text-align: center;
+
+                .mode-beauty {
+                    font-size            : 11px;
+                    color                : #000;
+                    text-transform       : uppercase;
+                    text-decoration-color: $color-white-Two;
+
+                    &:hover {
+                        color: $color-green-light;
+                    }
+                }
+
+                .body-main-content {
+                    font-size  : 18px;
+                    font-weight: 600;
+                    color      : #000;
+                    width      : 365px;
+                    margin     : 14px auto 26px auto;
+                }
+
+                .body-content-day-comment {
+                    font-size: 12px;
+                    color    : $color-brownish-grey;
+
+                }
+            }
+        }
+
+        .slick-dots {
+            @include dot-pass-bg-color-active(#ddd, #000);
+            margin-bottom: 600px;
+        }
+    }
+}

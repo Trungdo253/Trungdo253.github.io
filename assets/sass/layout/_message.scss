@@ -1,0 +1,21 @@
+.message {
+    margin   : 10px 0;
+    font-size: 12px;
+
+    &-box {
+        font-weight: normal;
+        @include fontUp();
+
+        &-text {
+            font-size  : 12px;
+            display    : inline-block;
+            font-weight: 600;
+        }
+
+        &-icon {
+            cursor       : pointer;
+            float        : right;
+            padding-right: 40px;
+        }
+    }
+}

@@ -1,0 +1,123 @@
+.new-arrivals {
+    &-title {
+        font-size: 30px;
+        color    : #000;
+        @include fontUp();
+    }
+    .active {
+        color: #000 !important;
+    }
+    &-nav {
+        @include fontUp();
+        color: #595959 !important;
+    }
+
+    #nav-tab {
+        border: none;
+
+        .nav-link {
+            color      : grey;
+            border     : none;
+            font-weight: bold;
+            height     : 40px;
+        }
+
+        .active {
+            color        : black;
+            border-bottom: black 2px solid;
+        }
+    }
+
+    &-wrapper {
+        display        : flex;
+        justify-content: space-between;
+        flex-wrap      : wrap;
+        padding        : 0 60px;
+
+        .new-arrivals-item {
+            margin-bottom: 59px;
+
+            .box-img-btn {
+                position: relative;
+
+                .box-btn {
+                    width           : 100%;
+                    height          : 40px;
+                    background-color: #000;
+                    display         : flex;
+                    align-items     : center;
+                    opacity         : 0;
+                    transition      : all 0.5s ease;
+                    @include posAbsolute("bottom-left", 0, 0);
+
+                    a {
+                        color          : #fff;
+                        font-size      : 12px;
+                        text-decoration: unset;
+                        text-align     : center;
+                        line-height    : 38px;
+                        transition     : color 0.3s ease;
+                        @include fontUp();
+
+                        &:hover {
+                            color: $color-red-light;
+                        }
+                    }
+
+                    .btn-eye,
+                    .btn-exchange {
+                        font-size: 24px;
+                        width    : 40px;
+                    }
+
+                    .btn-add {
+                        width : 138px;
+                        border: 1px solid #333333;
+                    }
+                }
+
+                &:hover .box-btn {
+                    opacity: 1;
+                }
+            }
+
+            .box-text {
+                margin   : 17px 0 0 0;
+                font-size: 14px;
+                color    : #222;
+
+                p {
+                    margin: 0 0 10px 0;
+
+                    i {
+                        font-size : 16px;
+                        margin    : 2px 0 0 0;
+                        float     : right;
+                        transition: color 0.3s ease;
+
+                        &:hover {
+                            cursor: pointer;
+                            color : red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .view-all-products {
+        text-align: center;
+
+        a {
+            font-size: 12px;
+            color    : #000;
+            @include fontUp();
+            text-decoration-color: #dddddd;
+            transition           : color 0.3s ease;
+
+            &:hover {
+                color: $color-red-btn;
+            }
+        }
+    }
+}

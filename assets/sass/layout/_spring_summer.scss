@@ -1,0 +1,65 @@
+.slide-spring {
+    margin-top: 10px;
+
+    .carousel-indicators {
+        margin-bottom: 30px;
+
+        button {
+            height: 5px;
+        }
+
+        z-index: 1;
+    }
+
+    .carousel-item {
+        transition: -webkit-transform 1s ease;
+        transition: transform 1s ease;
+    }
+
+    .slide-content {
+        margin: 200px auto;
+        @include fontUp();
+
+        &-title {
+            color: #000;
+
+            &-1 {
+                font-size: 24px;
+            }
+
+            &-2 {
+                margin   : 2px auto;
+                width    : 60%;
+                font-size: 72px;
+                height   : 170px;
+                @include fontUp();
+            }
+        }
+
+        &-btn {
+            margin-top: 80px;
+
+            &-1 {
+                background-color: #000;
+
+                i {
+                    margin: 0 0 0 11px;
+                }
+            }
+
+            &-2 {
+                background-color: $color-red-btn;
+            }
+
+            &-1,
+            &-2 {
+                width: 180px !important;
+                @include customBtn();
+
+                &:hover {
+                    background-color: $color-green-light;
+                }
+            }
+        }
+    }
+}

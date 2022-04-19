@@ -1,0 +1,31 @@
+.blog-post {
+    max-width : 1920px;
+    margin-top: 50px;
+
+    &-wrapper {
+        padding: $padding-blog-post-wrapper;
+    }
+
+    &-logo {
+        @include blog-post-logo();
+        @include fontUp();
+    }
+
+    &-tabs {
+        margin: 18px 0;
+
+        .nav-active {
+            border-bottom: 2px solid #000;
+        }
+
+        a {
+            color: #000;
+            @include fontUp();
+
+            &:hover {
+                color        : $color-green-light !important;
+                border-bottom: 2px solid #000;
+            }
+        }
+    }
+}

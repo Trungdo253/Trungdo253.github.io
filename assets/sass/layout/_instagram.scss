@@ -1,0 +1,23 @@
+.instagram {
+    margin-top: 79px;
+    color     : black;
+    @include fontFamily;
+
+    &-title {
+        margin: 0 0 57px 0;
+
+        &-1 {
+            font-size: 30px;
+            margin   : 0 0 29px 0;
+            @include fontUp();
+        }
+
+        &-2 {
+            font-size: 14px;
+        }
+    }
+
+    &-slide .slick-slide img {
+        width: 100%;
+    }
+}

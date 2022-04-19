@@ -1,0 +1,273 @@
+.my-input {
+    @include customInput();
+}
+
+.my-checkbox {
+    @include customCheckBox();
+}
+
+.checkout-form {
+    &-title {
+        font-size  : 60px;
+        font-weight: bold;
+        color      : #222;
+    }
+
+    &-wrapper {
+        margin-top: 50px;
+    }
+
+    &-content {
+
+        &-return-cus {
+            font-size: 12px;
+            @include fontUp();
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+        &-note {
+            font-size: 14px;
+            color    : rgb(129, 127, 127);
+            margin   : 25px 0;
+
+            p {
+                margin: 0;
+            }
+        }
+
+        &-login {
+            font-size: 13px !important;
+
+            .form-login-row {
+                padding: 5px 0;
+
+                label {
+                    color      : #222;
+                    font-weight: bold;
+                }
+            }
+
+            .checkbox-row {
+                padding: 15px 0;
+
+                .my-checkbox {
+                    @include customCheckBox();
+                }
+
+                .lost-password {
+                    color                : #222;
+                    text-decoration-color: #c2c0c0;
+                    float                : right;
+                }
+            }
+        }
+
+        &-btn {
+            margin: 20px 0;
+
+            button {
+                border-radius   : unset;
+                font-size       : 12px;
+                height          : 40px;
+                background-color: #222;
+                @include fontUp();
+            }
+        }
+
+        &-line-space {
+            background-color: #000;
+            height          : 2px;
+        }
+
+        &-coupon {
+            font-size: 12px;
+            color    : #222;
+            margin   : 20px 0;
+            @include fontUp();
+        }
+
+        &-input-coupon {
+            margin-top: 40px;
+
+            button {
+                width : 278px;
+                height: 40px;
+                border: dashed 1px #d7d7d7 !important;
+
+                img {
+                    margin : 0 5px;
+                    padding: 6px 5px;
+                    float  : left;
+                }
+
+                span {
+                    float: left;
+                }
+            }
+        }
+    }
+}
+
+.checkout-address-oder {
+    height    : auto;
+    margin: 50px 0;
+
+    &-row {
+
+        &-col {
+
+            .checkout-address-bill {
+                &-form {
+                    label {
+                        font-size  : 13px;
+                        color      : #222;
+                        font-weight: bold;
+                    }
+
+                    .my-input {
+                        margin: 8px 0;
+                    }
+
+                    &-note {
+                        font-size: 13px;
+                        color    : #666666;
+                    }
+                }
+            }
+
+            .checkout-address-ship {
+                margin-top: 50px;
+
+                .form-check-label {
+                    font-size: 13px;
+                    color    : #666666;
+                }
+
+                label[for="notes"] {
+                    color    : #222;
+                    font-size: 13px;
+                }
+
+                .area-notes {
+                    border-radius: unset;
+                    padding      : 15px 20px;
+                    font-size    : 13px;
+                }
+            }
+
+            .checkout-address-title {
+                font-size  : 36px;
+                font-weight: bold;
+                color      : #000;
+            }
+        }
+
+        .checkout-order {
+            height          : 1248px;
+            padding         : 29px 40px;
+            background-color: #f5f5f5;
+
+            &-title {
+                font-size: 18px;
+                color    : #000;
+                @include fontUp();
+            }
+
+            &-product {
+                margin-top: 30px;
+                font-size : 14px;
+
+                .product-item {
+                    margin-bottom: 20px;
+
+                    img {
+                        margin-right: 15px;
+                    }
+
+                    &-name-qty {
+                        .name {
+                            width : 102px;
+                            height: 36px;
+                        }
+
+                        .qty {
+                            margin-top: 10px;
+                            color     : #666666;
+                        }
+
+                        .name,
+                        .qty {
+                            display: block;
+                        }
+                    }
+
+                    .price {
+                        font-weight: bold;
+                        width      : 100%;
+                        text-align : right;
+                    }
+                }
+            }
+
+            &-sub-title {
+                font-size: 14px;
+                color    : #000;
+                @include fontUp();
+
+                .sub-total-text {
+                    width      : 30%;
+                    line-height: 30px;
+                }
+
+                .sub-total-price {
+                    width      : 70%;
+                    font-size  : 18px;
+                    font-weight: bold;
+                    text-align : right;
+                }
+            }
+
+            &-checkradio-direct {
+                font-size: 13px;
+
+                .form-check-label {
+                    font-size  : 13px;
+                    font-weight: bold;
+                }
+
+                .direct-text {
+                    color  : #666666;
+                    padding: 10px 0 10px 20px;
+                }
+            }
+
+            &-check-direct {
+                .form-check-label {
+                    font-size: 13px;
+                    color    : #666666;
+                    width    : 231px;
+                    height   : 34px;
+
+                    a {
+                        color                : #222222;
+                        text-decoration-color: #222222;
+                    }
+                }
+            }
+
+            &-btn {
+                margin-top: 50px;
+
+                button {
+                    height       : 40px;
+                    color        : #fff;
+                    border-radius: unset;
+                    @include fontUp();
+                }
+            }
+        }
+    }
+}
